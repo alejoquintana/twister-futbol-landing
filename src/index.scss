@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+.section-container{
+	min-height: 100vh;
+}
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+	.section-container{
+		padding: 0 64px;
+	}
+	
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}
+.variables {
+	dark: rgb(27, 38, 44);
+	primary: rgb(15, 76, 117);
+	secondary: rgb(50, 130, 184);
+	light: rgb(187, 225, 250);
+}

@@ -1,0 +1,26 @@
+.navbar{
+	height: 8vh;
+	background-color: rgba(196, 231, 255);
+	/* border-bottom: #000 solid 2px; */
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+}
+.list{
+	display: flex;
+	gap: 50px;
+	height: 100%;
+}
+.item{
+	height: 100%;
+	cursor: pointer;
+	font-size: 1.2rem;
+	transition: all 500ms;
+	display: flex;
+	align-items: center;
+}
+.item:hover{
+	transform: scale(1.2)
+}
