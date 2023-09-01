@@ -1,30 +1,30 @@
 import Divider from "./divider";
 
 const texts = [
-	'En el corazón de nuestra pasión por el deporte y el estilo, nace "Twister Futbol", un taller de ropa deportiva con un toque personal y familiar. Fundada hace más de dos décadas.',
-	'todos nuestros articulos estan confeccionados con materiales de primerisima calidad, lo que garantiza una durabilidad unica.',
-	'nuestros clientes son potencialmente clubes de futbol infantil afiliados a las distintas ligas de capital federal y gran Buenos Aires. Pero sin desatender otras actividades y disciplina, tales como basquet, volley, hockey, entre otros.',
-	
+    'En el corazón de nuestra pasión por el deporte y el estilo, nace "Twister Futbol", un taller de ropa deportiva con un toque personal y familiar. Fundada hace más de dos décadas.',
+    'todos nuestros articulos estan confeccionados con materiales de primerisima calidad, lo que garantiza una durabilidad unica.',
+    'nuestros clientes son potencialmente clubes de futbol infantil afiliados a las distintas ligas de capital federal y gran Buenos Aires. Pero sin desatender otras actividades y disciplina, tales como basquet, volley, hockey, entre otros.',
+
 ]
 
 const AboutUs = () => {
-	return (
-		<div className='section-container bg-light' id='us'>
-			<Divider />
-			<div className="grow flex flex-col items-center justify-center gap-40">
-				<h2 className="text-6xl text-dark font-bold underline decoration-white">Te contamos sobre nosotros.</h2>
-					<div className='grid grid-cols-3 gap-20'>
-						{texts.map((text,i) => {
-							return (
-								<p key={i} className="py-4 border-t-2 border-secondary">
-									{text}
-								</p>
-							)
-						})}
-				</div>
-			</div>
-		</div>
-	);
+    return (
+        <div className='section-container flex flex-col bg-gradient-to-b from-light to-secondary' id='us'>
+            <Divider />
+            <div className="grow flex flex-col items-center justify-center gap-40">
+                <h2 className="text-6xl text-dark font-bold underline decoration-white">Te contamos sobre nosotros.</h2>
+                <div className='grid grid-cols-3 gap-20'>
+                    {texts.map((text, i) => {
+                        return (
+                            <p key={i} className="py-4 border-t-2 border-secondary">
+                                {text}
+                            </p>
+                        )
+                    })}
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default AboutUs;

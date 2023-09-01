@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./navbar.scss";
 import NavItem from "./nav.item";
 
 const sections = [

@@ -1,6 +1,6 @@
 .navbar{
 	height: 8vh;
-	background-color: rgba(196, 231, 255);
+	background-color: $primary;
 	/* border-bottom: #000 solid 2px; */
 	display: flex;
 	justify-content: center;
@@ -20,6 +20,7 @@
 	transition: all 500ms;
 	display: flex;
 	align-items: center;
+    color: #fff;
 }
 .item:hover{
 	transform: scale(1.2)
